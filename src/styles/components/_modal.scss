@@ -1,0 +1,44 @@
+//only change the divs that are direct disendence of reactmodalportal
+//add the effect of aparing the opacity
+.ReactModalPortal>div {
+    opacity: 0;
+}
+ 
+//when ReactModal__Overlay apears or disapears apply the transition effect
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+} 
+
+ 
+
+//--------------
+.modal {
+    background: $light-blue;
+    color: white;
+    max-width: 30rem;  
+    outline: none;
+    padding: $l-size;
+    text-align: center;
+}
+
+.modal__title{
+    margin:0 0 $m-size 0;
+}
+.modal__body{
+    font-size:2rem;
+    font-weight: 300;
+    margin:0 0 $l-size 0;
+    word-break:break-all; //long words gets broken in the max-width
+    font-style: italic;
+}

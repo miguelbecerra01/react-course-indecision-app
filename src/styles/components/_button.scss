@@ -1,0 +1,44 @@
+//http://sass-lang.com/documentation/Sass/Script/Functions.html
+//Big Button
+.big-button {
+    background: $purple;
+    border: none;
+    border-bottom: .6rem solid darken($color: $purple, $amount: 10%);
+    color: white;
+    font-weight: bold;
+    font-size: $l-size;
+    width: 100%;
+    margin-bottom: $s-size;
+    padding: 2.4rem;
+}
+
+//button
+.button{
+    background: $purple;
+    border:none;
+    border-bottom:.3rem solid darken($purple, 10%);
+    color:white;
+    font-weight:500;
+    padding:$s-size;
+    font-size: $m-size;
+}
+
+.button--link{
+    background:none;
+    border:none;
+    color:$off-white;
+    padding:0;   
+    word-break: normal; 
+}
+
+.button:not(:disabled) {
+    animation: enable 0.3s linear;
+}
+
+@media(min-width:$desktop-breakpoint) {
+    .big-button{
+        margin-bottom: $xl-size;
+    }
+}
+ 
+ 

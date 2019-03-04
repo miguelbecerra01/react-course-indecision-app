@@ -1,0 +1,28 @@
+.header {
+    background: $off-black;
+    color: #fff;
+    margin-bottom: $m-size;
+    padding: $m-size 0; //nested selectors, apply to all h1 where are in header div
+    // h1{
+    //     color:red;
+    // }
+}
+
+//BEM - block element modifier -> naming convension no special meaning
+.header__title {
+    font-size: $l-size;
+    margin: $s-margin;
+}
+
+.header__subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    margin: $s-margin;
+}
+
+@media(min-width: $desktop-breakpoint) {
+    .header {
+        margin-bottom: $xl-size;
+    }
+}
